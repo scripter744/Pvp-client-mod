@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "pvpclient",
+  "version": "${version}",
+  "name": "PvP Client",
+  "description": "A high-performance PvP client mod with advanced HUD, performance optimizations, and smooth UI.",
+  "authors": ["PvPClient Dev"],
+  "contact": {
+    "homepage": "https://github.com/pvpclient",
+    "sources": "https://github.com/pvpclient/pvp-client"
+  },
+  "license": "MIT",
+  "icon": "assets/pvpclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.pvpclient.client.ClientMain"
+    ]
+  },
+  "mixins": [
+    "pvpclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4",
+    "java": ">=21"
+  },
+  "suggests": {}
+}
